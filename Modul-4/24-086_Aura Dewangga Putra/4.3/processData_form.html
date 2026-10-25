@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Pribadi</title>
+</head>
+<body>
+    <h2>Isi Data Pribadi</h2>
+    <!-- Action diubah ke folder 4.3.1 -->
+    <form action="../4.3.1/processData.php" method="POST">
+        <p>
+            <label>Surname:</label><br>
+            <input type="text" name="surname" required>
+        </p>
+        <p>
+            <label>Email address:</label><br>
+            <input type="email" name="email" required>
+        </p>
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password" required>
+        </p>
+        <p>
+            <label>Street Address:</label><br>
+            <textarea name="street" rows="3" required></textarea>
+        </p>
+        <p>
+            <label>State:</label><br>
+            <select name="state">
+                <option value="NSW">New South Wales</option>
+                <option value="VIC">Victoria</option>
+                <option value="QLD">Queensland</option>
+                <option value="WA">Western Australia</option>
+            </select>
+        </p>
+        <input type="hidden" name="country" value="Australia">
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </p>
+        <p>
+            <input type="checkbox" name="vegetarian" value="Ya"> Vegetarian?
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
